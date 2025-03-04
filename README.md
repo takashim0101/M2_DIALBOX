@@ -1,4 +1,4 @@
-Project Summary
+Project Summary:
 This project is a web application that includes several tools for user interaction, built using HTML, CSS, and JavaScript.
 
 HTML Structure
