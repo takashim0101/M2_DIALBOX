@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission 2 Javascript</title>
+
+    <!-- Connected to CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- jQuery library for easier DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Connected to JS files -->
+    <script src="script.js" defer></script>
+    <style>
+      /* Basic styling for the body */
+      body {
+        /* Font family */
+        font-family: Arial, sans-serif;
+        /* Cover the entire background */
+        background-size: cover;
+        /* Center the background */
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Dialog box for email and password validation -->
+    <dialog id="myDialog">
+      <!-- Title of the dialog -->
+      <h1 id="secureAuth">SecureAuth Toolkit</h1>
+      <!-- Subtitle for context -->
+      <h2>This is email and password validation</h2>
+      <!-- Section identifier -->
+      <h2 class="paragraph-triplets">First tool</h2>
+      <!-- Label for email input -->
+      <label for="input-email">Email:</label>
+      <!-- Email input field -->
+      <input type="email" id="input-email" required />
+      <br /><br />
+      <!-- Label for password input -->
+      <label for="input-password">Password:</label>
+      <!-- Password input field -->
+      <input type="text" id="input-password" required />
+      <br /><br />
+      <!-- Button to trigger validation -->
+      <button id="validate-btn">Validate</button>
+      <!-- Paragraph to display validation messages -->
+      <p id="message"></p>
+      <br />
+
+      <button id="closeDialog">Close</button>
+    </dialog>
+    <!-- Button top left corner to open the dialog -->
+    <button type="button" id="openDialog">Open Dialog</button>
+
+    <!-- Color changing section -->
+    <div class="tool-section">
+      <h2>
+        <span
+          >By clicking icons, you have the option of changing two colors or more
+          colors!</span
+        >
+      </h2>
+      <h2 class="header-class" id="header-id">Changing the color</h2>
+
+      <!-- Button to change background color -->
+      <button onclick="changeColour()">Change Colour!</button>
+      <!-- Button to cycle through multiple colors -->
+      <button onclick="changeMultiColour()">Change Multi Colour</button>
+    </div>
+    <!-- Arithmetic operations section -->
+    <div class="tool-section">
+      <h1>Arithmetic Operations</h1>
+      <h2 class="paragraph-triplets">Second tool</h2>
+      <!-- Label for first number input -->
+      <label for="num1">Number 1:</label>
+      <!-- First number input field -->
+      <input type="number" id="num1" required />
+      <br />
+      <!-- Label for second number input -->
+      <label for="num2">Number 2:</label>
+      <!-- Second number input field -->
+      <input type="number" id="num2" required />
+      <br /><br />
+
+      <!-- Dropdown for selecting arithmetic operation -->
+      <select id="operation">
+        <option value="add">Addition (+)</option>
+        <option value="subtract">Subtraction (-)</option>
+        <option value="multiply">Multiplication (×)</option>
+        <option value="divide">Division (÷)</option>
+      </select>
+      <br />
+
+      <!-- Button to perform the selected arithmetic operation -->
+      <button onclick="performOperation()">Calculate</button>
+      <!-- Paragraph to display the result -->
+      <p id="result"></p>
+    </div>
+
+    <!-- Car purchase payment calculator section -->
+    <div class="tool-section">
+      <h1>Car Purchase Payment Calculator</h1>
+      <h2 class="paragraph-triplets">Third tool</h2>
+
+      <!-- Label for total cost input -->
+      <label for="totalCost">Total Cost of Cars:</label>
+      <!-- Input for total cost -->
+      <input type="number" id="totalCost" required />
+      <br /><br />
+
+      <!-- Label for interest rate input -->
+      <label for="interestRate">Annual Interest Rate (%):</label>
+      <!-- Input for annual interest rate -->
+      <input type="number" id="interestRate" required />
+      <br /><br />
+
+      <!-- Label for loan duration input -->
+      <label for="loanDuration">Loan Duration (weeks):</label>
+      <!-- Input for loan duration in weeks -->
+      <input type="number" id="loanDuration" required />
+      <br /><br />
+
+      <!-- Button to calculate weekly payment -->
+      <button onclick="calculateWeeklyPayment()">
+        Calculate Weekly Payment
+      </button>
+      <p id="weeklyPaymentResult"></p>
+    </div>
+
+    <div class="tool-section">
+      <h1>Customer List Search System</h1>
+      <!-- Input for searching customers -->
+      <h2 class="paragraph-triplets">Forth tool</h2>
+
+      <!-- Paragraph to display weekly payment result -->
+      <div id="customer-list"></div>
+
+      <h2>Search Customer</h2>
+      <input type="text" id="search-input" placeholder="Enter name" />
+
+      <!-- Button to trigger customer search -->
+      <button id="search-button">Search</button>
+      <br />
+
+      <h2>Add New Customer</h2>
+      <!-- Form for adding a new customer -->
+      <form id="add-customer-form">
+        <!-- Input for surname -->
+        <input type="text" id="surname" placeholder="Surname" required />
+        <!-- Input for first name -->
+        <input type="text" id="firstname" placeholder="First Name" required />
+        <!-- Input for phone number -->
+        <input type="text" id="phone" placeholder="Phone Number" required />
+        <!-- Input for email address -->
+        <input type="email" id="email" placeholder="Email Address" required />
+        <!-- Button to submit the form and add customer -->
+        <button type="submit">Add</button>
+      </form>
+      <br /><br />
+
+      <!-- Button to toggle comments -->
+      <button class="toggle-button">
+        Click the message to leave a comment or to leave one!!!
+      </button>
+    </div>
+  </body>
+</html>

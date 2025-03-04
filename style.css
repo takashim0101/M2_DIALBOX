@@ -1,0 +1,78 @@
+/* Dialog box styling */
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: stretch; /* Align items to fill the width */
+  width: 500px; /* Set a fixed width for the dialog */
+}
+
+/* Heading styles */
+dialog h1,
+dialog h2 {
+  margin: 5px 0; /* Add some margin for spacing */
+}
+
+/* Label and input field styling */
+dialog label {
+  margin-top: 10px; /* Space above the label */
+  font-weight: bold; /* Make labels bold */
+}
+
+dialog input {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Add padding for better usability */
+  margin-top: 5px; /* Space above the input */
+  margin-bottom: 15px; /* Space below the input */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Button styling */
+dialog button {
+  margin-top: 10px; /* Space above buttons */
+  padding: 10px; /* Add padding for buttons */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+dialog button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  position: relative; /* 子要素の絶対位置を基準にする */
+}
+
+/* Fireworks animation styles */
+.firework {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: explode 1s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(3);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
